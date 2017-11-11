@@ -1,0 +1,3 @@
+[run]
+source = PeerMid
+omit = PeerMid/test*
