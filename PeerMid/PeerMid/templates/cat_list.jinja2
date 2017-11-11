@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Snorgle Cats</h1>
+        {% if cats %}
+            {% for cat in cats %}
+                <article>
+                    <h2><a href="{{ request.route_url('detail', id=cat.id) }}">{{ cat.category }}</a></h2>
+                    <hr />
+                    <p><img src="{{ cat.image }}"><a href="{{ cat.image }}"></p>
+                    <p>Created <strong>{{ cat.creation_date }}</strong></p>
+                    <p>Amount: {{ cat.amount }}</p>
+                </article>
+            {% endfor %}
+        {% else %}
+            <p>You have no expenses to list.</p>
+        {% endif %}
+        <footer><a href="{{ request.route_url('home') }}">Home</a></footer>
+    </body>
+</html>

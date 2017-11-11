@@ -1,0 +1,14 @@
+[run]
+source = PeerMid
+omit =
+    PeerMid/test*
+    PeerMid/models/*
+    PeerMid/scripts/*
+    PeerMid/data/*
+    PeerMid/views/notfound.py
+    PeerMid/views/__init__.py
+    PeerMid/routes.py
+    PeerMid/__init__.py
+
+[report]
+show_missing = True
