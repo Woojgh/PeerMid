@@ -1,0 +1,18 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.field label {
+    font-size: 50px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
