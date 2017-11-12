@@ -145,6 +145,16 @@
   text-decoration: none;
 }
 
+.list_item {
+  height:20vw;
+  width: 20vw;
+}
+
+.list_image {
+  height:10vw;
+  width: 20vw;
+}
+
 .login-view {
   border-radius: 5px;
   border:5px solid #211702;
