@@ -9,5 +9,6 @@ def main(global_config, **settings):
     # config.include('.models')
     config.include('.routes')
     config.include('.views')
+    config.add_static_view(name='static', path='PeerMid:static')
     config.scan()
     return config.make_wsgi_app()
