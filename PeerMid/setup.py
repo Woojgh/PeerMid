@@ -22,6 +22,7 @@ requires = [
     'ipython',
     'pyramid_ipython',
     'tox',
+    'psycopg2',
 ]
 
 tests_require = [
@@ -57,7 +58,7 @@ setup(
             'main = PeerMid:main',
         ],
         'console_scripts': [
-            'initialize_PeerMid_db = PeerMid.scripts.initializedb:main',
+            'initdb = PeerMid.scripts.initializedb:main',
         ],
     },
 )

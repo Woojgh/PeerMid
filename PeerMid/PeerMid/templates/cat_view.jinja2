@@ -1,0 +1,14 @@
+{% extends "layout.jinja2" %}
+{% block create %}
+    <article class="list_item">
+        <p>id: {{ cat.id }} <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        <p class="cat-title">{{ cat.title }} {{ cat.creation_date }}</p>
+    </article>
+    div><img class="list_item" src="{{ cat.image }}"></div>
+    <article class="list_item">
+        <p>{{ cat.body }}</p>
+        <form method="POST">
+            <button type="submit">Edit Journal Entry</button> 
+        </form>
+    </article>
+{% endblock %}

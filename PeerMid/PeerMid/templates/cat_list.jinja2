@@ -4,7 +4,7 @@
     {% for cat in cats %}
         <div><a href="{{ cat.image }}"><img class="list_item" src="{{ cat.image }}"></a></div>
         <article class="list_item">
-            <h3><a href="{{ request.route_url('detail', id=cat.id) }}">{{ cat.category }}</a></h3>
+            <h3><a href="{{ request.route_url('cat_view', id=cat.id) }}">{{ cat.category }}</a></h3>
             <hr />
             <p>Created <strong>{{ cat.creation_date }}</strong></p>
             <p>Amount: {{ cat.amount }}</p>
