@@ -146,12 +146,9 @@
 }
 
 .list_item {
+  border-radius:5px;
   height:20vw;
-  width: 20vw;
-}
-
-.list_image {
-  height:10vw;
+  margin:auto;
   width: 20vw;
 }
 
